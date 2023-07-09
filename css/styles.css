@@ -1,0 +1,426 @@
+@charset "UTF-8";
+/*Colores*/ /*Fuentes*/
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&family=Noto+Sans:ital,wght@0,400;0,700;0,800;1,400;1,700&family=Poppins:ital,wght@0,400;0,700;0,800;1,400;1,700&display=swap");
+@font-face {
+  font-family: "symbols";
+  src: url(..//fonts/websymbols-regular-webfont.svg#WebSymbolsRegular) format(svg), url(..//fonts/websymbols-regular-webfont.eot);
+  src: url(..//fonts/websymbols-regular-webfont.eot) format("embedded-opentype"), url(..//fonts/websymbols-regular-webfont.woff) format(woff), url(..//fonts/websymbols-regular-webfont.ttf) format(truetype);
+  font-weight: normal;
+  font-style: normal;
+}
+/*Reseteo CSS*/
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+/*Pisando Bootstrap*/
+p,
+ul {
+  margin-bottom: 0px;
+}
+
+body {
+  background-color: rgb(220, 218, 188);
+}
+
+/*Estilos Generales*/
+.principal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 60px;
+  font-size: 15px;
+}
+
+.principal .box .description {
+  font-size: 20px;
+  text-align: center;
+}
+
+.principal h2 {
+  margin-bottom: 10px;
+  font-size: 22px;
+  font-weight: 600;
+  color: rgb(67, 85, 70);
+}
+
+.principal h3,
+.table-title {
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  color: rgb(67, 85, 70);
+}
+
+.description {
+  color: rgb(67, 85, 70);
+  letter-spacing: 0.5px;
+  text-align: left;
+}
+.description p {
+  margin-bottom: 10px;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/*Encabezado*/
+header {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(247, 162, 186);
+  z-index: 1;
+}
+header div {
+  margin-left: 30px;
+}
+header div img {
+  width: 250px;
+}
+
+/*Menu*/
+.inputMenu {
+  display: none;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  list-style-type: none;
+}
+
+nav ul li {
+  color: rgb(67, 85, 70);
+  margin: 30px;
+}
+
+nav ul li a, 
+nav ul li div {
+  margin: 30px;
+  font-size: 20px;
+  color: rgb(67, 85, 70);
+  text-shadow: 0.5px 0.5px rgb(138, 170, 143);
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+nav ul li a:hover,
+nav ul li div:hover {
+  color: rgb(3, 31, 7);
+}
+
+/*Banner*/
+.banner {
+  height: 100px;
+  margin-top: 40px;
+  background-image: url(..//img/background.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.banner h1 {
+  font-size: 40px;
+  color: rgb(67, 85, 70);
+  text-shadow: 0.5px 0.5px 0.5px rgb(138, 170, 143);
+  letter-spacing: 3px;
+  font-weight: normal;
+  text-align: center;
+  line-height: 100px;
+}
+
+/*Footer*/
+footer section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  background-color: rgb(247, 162, 186);
+  margin-top: 40px;
+}
+footer section .details {
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+  color: rgb(67, 85, 70);
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+footer section .details .icon {
+  font-family: symbols;
+  font-size: 10px;
+  color: rgb(67, 85, 70);
+}
+footer section .social {
+  margin-right: 30px;
+}
+footer section .social .icon {
+  font-family: symbols;
+  font-size: 30px;
+  color: rgb(67, 85, 70);
+  padding: 5px;
+}
+footer section .social .icon:hover {
+  color: rgb(3, 31, 7);
+}
+
+/*Index*/
+.card {
+  height: 450px;
+  max-width: 220px;
+  background-color: rgb(220, 218, 188);
+  border: none;
+  padding: 5px;
+  margin: 15px;
+  margin-top: 30px;
+}
+.card:hover {
+  background-color: rgb(243, 241, 239);
+}
+.card .card-img-top {
+  border-radius: 5px;
+}
+.card .card-body {
+  margin-top: 10px;
+}
+.card .card-text {
+  height: 70px;
+}
+
+.card .precio{
+  height: 20px;
+  font-weight: 550;
+}
+
+
+.card-error{
+  justify-self: center;
+  height: 90px;
+  max-width: 450px;
+  background-color: rgb(243, 241, 239);
+  border: none;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 15px;
+  margin-top: 30px;
+}
+
+.button {
+  grid-area: boton;
+  display: block;
+  margin: 0px auto;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  padding: 5px 15px;
+  border: 0.5px solid rgb(67, 85, 70);
+  border-radius: 2px;
+  background-color: rgb(243, 241, 239);
+  color: rgb(67, 85, 70);
+  cursor: pointer;
+}
+.button:hover {
+  border: 1px solid rgb(243, 241, 239);
+  background-color: rgb(67, 85, 70);
+  color: rgb(243, 241, 239);
+}
+
+.finalizar {
+  width: 200px;
+}
+
+/*Carrito*/
+
+.contenedorResumen{
+  background-color: rgb(243, 241, 239);
+  border-radius: 5px;
+  border: none;
+  padding: 5px;
+  margin: 15px;
+  margin-top: 40px;
+}
+
+/*Main de contacto*/
+.FlexContact {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+/*Formulario*/
+.form {
+  max-width: 500px;
+  color: rgb(67, 85, 70);
+  margin: 0px;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: "nombre apellido" "line1 line2" "email telefono" "line3 line4" "comentario comentario" "line5 line5" "boton boton";
+}
+.form label {
+  margin-top: 20px;
+}
+.form .fillin {
+  background: none;
+  padding: 3px 6px;
+  border: none;
+  border-bottom: 0.5px solid rgb(67, 85, 70);
+  margin-right: 20px;
+}
+.form .fillin:hover {
+  border: 0.5px solid rgb(67, 85, 70);
+  border-radius: 2px;
+}
+.form textarea {
+  grid-area: line5;
+  height: 70px;
+  resize: none;
+}
+
+form label:nth-child(1) {
+  grid-area: nombre;
+}
+
+form label:nth-child(2) {
+  grid-area: line1;
+}
+
+form label:nth-child(3) {
+  grid-area: apellido;
+}
+
+form label:nth-child(4) {
+  grid-area: line2;
+}
+
+form label:nth-child(5) {
+  grid-area: email;
+}
+
+form label:nth-child(6) {
+  grid-area: line3;
+}
+
+form label:nth-child(7) {
+  grid-area: telefono;
+}
+
+form label:nth-child(8) {
+  grid-area: line4;
+}
+
+form label:nth-child(9) {
+  grid-area: comentario;
+}
+
+.map iframe {
+  width: 450px;
+  height: 320px;
+}
+
+/*Media Queries*/
+/*Tablet Estándar*/
+@media screen and (max-width: 992px) {
+  header {
+    height: 130px;
+    flex-wrap: wrap;
+  }
+  header div img {
+    margin-top: 20px;
+  }
+  ul {
+    padding-left: 0px;
+  }
+  /*Main general*/
+  .principal {
+    margin-top: 20px;
+  }
+  /*footer*/
+  footer section {
+    height: 80px;
+    margin-top: 20px;
+  }
+  
+/*Teléfonos en modo horizontal y tabletas pequeñas*/
+@media screen and (max-width: 576px) {
+  /*Header*/
+  header {
+    height: 100px;
+    flex-wrap: wrap;
+  }
+  header div img {
+    margin-top: 0px;
+    width: 200px;
+  }
+  /*Banner*/
+  .banner {
+    height: 80px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+  }
+  .banner h1 {
+    font-size: 35px;
+    line-height: 80px;
+  }
+  /*Main general*/
+  .principal {
+    font-size: 14px;
+  }
+  .principal h2, .principal h3 {
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  .description p {
+    margin-bottom: 8px;
+  }
+  /*Index*/
+  .card {
+    margin-top: 30px;
+  }
+}
+  
+/*Teléfonos pequeños*/
+@media screen and (max-width: 448px) {
+  .principal {
+    margin: 0px;
+  }
+  /*Index*/
+  .card {
+    height: 630px;
+    margin: 10px;
+    margin-top: 20px;
+  }
+  
+  /*Banner*/
+  @media screen and (max-width: 370px) {
+    .banner {
+      height: 70px;
+    }
+    .banner h1 {
+      font-size: 30px;
+      line-height: 70px;
+    }
+    /*Index*/
+    .card {
+      height: 590px;
+    }
+    /*Contacto*/
+    .map iframe {
+      max-width: 310px;
+    }
+    /*Footer*/
+    footer section .details {
+      margin-left: 12px;
+    }
+    footer section .social {
+      margin-right: 12px;
+    }
+  }
+}
+}
+

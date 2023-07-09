@@ -1,0 +1,81 @@
+[
+    {
+    "codigo": "1", 
+    "imagen": "img/Productos/banco de meditación.jpg", 
+    "item": "Banco", 
+    "descripcion": "Banco de meditación plegable de madera de haya.", 
+    "precio": 12400
+    },
+    
+    {
+    "codigo": "2", 
+    "imagen": "img/Productos/bloque de corcho.jpg", 
+    "item": "Bloque de corcho", 
+    "descripcion": "Bloque de yoga de corcho natural.", 
+    "precio": 6990
+    },
+    
+    {
+    "codigo": "3", 
+    "imagen": "img/Productos/botella termica.jpg", 
+    "item": "Botella térmica", 
+    "descripcion": "Botella térmica de acero inoxidable, 1 litro.", 
+    "precio": 5590
+    },
+    
+    {
+    "codigo": "4", 
+    "imagen": "img/Productos/cojin de propiocepcion.jpg", 
+    "item": "Disco de equilibrio", 
+    "descripcion": "Disco de equilibrio para trabajar propiocepción, 35cm.", 
+    "precio": 4900
+    },
+    
+    {
+    "codigo": "5", 
+    "imagen": "img/Productos/esterilla 4 mm.jpg", 
+    "item": "Esterilla 4mm", 
+    "descripcion": "Esterilla de caucho natural antideslizante, 4mm.", 
+    "precio": 3500
+    },
+    
+    {
+    "codigo": "6", 
+    "imagen": "img/Productos/esterilla 8 mm.jpg", 
+    "item": "Esterilla 8mm", 
+    "descripcion": "Esterilla de caucho natural antideslizante, 8mm.", 
+    "precio": 5500
+    },
+    
+    {
+    "codigo": "7", 
+    "imagen": "img/Productos/fitball grande.jpg", 
+    "item": "Fitball grande", 
+    "descripcion": "Pelota de yoga, 85cm.", 
+    "precio": 5250
+    },
+    
+    {
+    "codigo": "8", 
+    "imagen": "img/Productos/fitball pequeña.jpg", 
+    "item": "Fitball pequeña", 
+    "descripcion": "Pelota de yoga, 65cm.", 
+    "precio": 4250
+    },
+    
+    {
+    "codigo": "9", 
+    "imagen": "img/Productos/Toallon de microfibra.jpg", 
+    "item": "Toallón", 
+    "descripcion": "Toallón de microfibra de secado rápido, 80 x 130cm.", 
+    "precio": 3100
+},
+
+{
+    "codigo": "10", 
+    "imagen": "img/Productos/cojin de meditacion.jpg",
+    "item": "Cojín", 
+    "descripcion": "Cojín de meditación redondo color granate.", 
+    "precio": 4250
+    }
+]
