@@ -70,7 +70,6 @@ const activarClickEnBotonFinalizar = () => {
   botonFinalizar.addEventListener("click", () => {
     if (carrito.length > 0) {
       confirmarCompra();
-      limpiarCarrito();
     } else {
       alertarError();
     }
@@ -95,6 +94,7 @@ const confirmarCompra = () => {
         showConfirmButton: true,
         timer: 3000,
       });
+      limpiarCarrito();
     } else if (result.isDenied) {
       Swal.fire({
         position: "center",
@@ -103,6 +103,7 @@ const confirmarCompra = () => {
         showConfirmButton: true,
         timer: 3000,
       });
+      limpiarCarrito();
     }
   });
 };
